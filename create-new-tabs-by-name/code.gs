@@ -1,6 +1,9 @@
+//  Allows the user to run from Addons>name of script
 function onOpen(e) {
   SpreadsheetApp.getUi().createAddonMenu()
+      //  Make Sheets run the copy function
       .addItem('Make Sheets', 'copy')
+      //  Search run the search function
       .addItem('Search', 'search')
   
       .addToUi();
@@ -9,6 +12,7 @@ function onOpen(e) {
 function search() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName("Index");
+  //  Merge cells C:6 - E:6 for the search function.
   var range = sheet.getRange("C6:E6");
   var search = range.getValue()
   var actsheet = ss.getSheetByName(search)
@@ -18,16 +22,10 @@ function search() {
 function copy() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheets()[0];
-  // var range2 = sheet.getRange("B1:B2");
 
-  //var templateid = range2.getCell(1, 1).getValue()
-  //var folderpath = range2.getCell(2, 1).getValue()
-  //  Logger.log(templateid);
-
- // var TemplateFile = DocsList.getFileById(templateid); //template sheet
-  //var filesFolder = DocsList.getFolder(folderpath);
   var b = 1;
  var rowcount = (sheet.getLastRow());
+ // put list of names in the A collum, starting in the first row.
  var range = sheet.getRange("A1:A" + rowcount);
       var count = rowcount.toFixed(0);
   //Logger.log(count);
