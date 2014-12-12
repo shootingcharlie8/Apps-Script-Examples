@@ -1,0 +1,4 @@
+1. Make a new script and put the code.gs and index.html in the script project
+2. Make a spreadsheet and share it with anyone with the link
+3. get the file ID from the url like: https://docs.google.com/a/student.bvcschools.org/spreadsheets/d/132YG_VV0OaOKh863m17XwgHMBqR__py-RtSVSP4lnps/edit#gid=0     the file ID is: 132YG_VV0OaOKh863m17XwgHMBqR__py-RtSVSP4lnps
+4. Add the file ID to the script in the code file.
