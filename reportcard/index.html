@@ -1,0 +1,38 @@
+<script>
+  function updateUrl(url) {
+    var div = document.getElementById('output');
+    div.innerHTML = '<a href="' + url + '">Got it!</a>';
+  }
+</script>
+<form id="myForm">
+Students first name:<br>
+<input type="text" name="firstname">
+<br>
+Students last name:<br>
+<input type="text" name="lastname">
+<br>
+<input type="radio" name="sex" value="Male" checked>Male
+<input type="radio" name="sex" value="Female">Female
+<br>
+Grade in %:<br>
+<input type="text" name="grade"><br>
+<input type="radio" name="class" value="Math" checked>Math
+<input type="radio" name="class" value="History" checked>History
+<input type="radio" name="class" value="Science" checked>Science
+<input type="radio" name="class" value="Reading" checked>Reading
+<input type="radio" name="class" value="Writing" checked>Writing
+<input type="radio" name="class" value="Grammer" checked>Grammar
+
+
+
+
+
+
+
+
+  <input type="button" value="Submit"
+onclick="google.script.run
+          .withSuccessHandler(updateUrl)
+          .processForm(this.parentNode)" />
+          </form>
+<div id="output"></div>
