@@ -4,7 +4,7 @@ function doGet() {
 }
 
 function processForm(formObject) {
-    var ss = SpreadsheetApp.openById("1_uNPezrgHQRhJWqw7mueD-7u3deQ6aiiffqrQ3EWdVg");
+    var ss = SpreadsheetApp.openById("*****ID HERE*****");
   var sheet = ss.getActiveSheet()
 var row = sheet.getLastRow()
   //receptian of form
